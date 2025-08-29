@@ -1,5 +1,7 @@
 import streamlit as st
 
+def show_premium():
+
 st.set_page_config(page_title="PersonaX Premium", page_icon="💎")
 
 st.title("💎 PersonaX Premium")
@@ -35,3 +37,4 @@ with col2:
 # Footer
 st.markdown("---")
 st.caption("This is a demo version.")
+
