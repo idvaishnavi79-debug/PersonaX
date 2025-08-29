@@ -1,17 +1,15 @@
 import streamlit as st
-import home
-import premium
-import about
+from home import show_home
+from premium import show_premium
+from about import show_about
 
-# App Title + Logo
-st.set_page_config(page_title="PersonaX", page_icon="✨")
-
-st.sidebar.title("PersonaX Navigation")
-page = st.sidebar.radio("Go to:", ["Home", "Premium", "About Me"])
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Home", "Premium", "About"])
 
 if page == "Home":
-    home.show_home()
+    show_home()
 elif page == "Premium":
-    premium.show_premium()
-elif page == "About Me":
-    about.show_about()
+    show_premium()
+elif page == "About":
+    show_about()
+
