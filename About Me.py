@@ -1,5 +1,7 @@
 import streamlit as st
 
+def show_about():
+
 st.set_page_config(page_title="About PersonaX", page_icon="ℹ️")
 
 st.title("ℹ️ About PersonaX")
@@ -41,3 +43,4 @@ st.write("- Email: onlineppptdeliv79@gmail.com")
 
 st.markdown("---")
 st.caption("PersonaX © 2025 — Created with ❤️ by Vaishnavi")
+
