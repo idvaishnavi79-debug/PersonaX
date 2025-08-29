@@ -6,6 +6,8 @@ import base64
 import json
 from io import BytesIO
 
+def show_home():
+
 st.set_page_config(page_title="PersonaX", page_icon="🧭", layout="centered")
 
 # Simple SVG logo encoded as data URI (self-contained)
@@ -227,4 +229,5 @@ else:
 # Footer & usage tips
 st.markdown("---")
 st.markdown("**Tips:** This is a project-ready baseline. If you want: Add more questions, weight certain items, save results to a database, or show visual charts. I can help extend any of these.")
+
 
